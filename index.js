@@ -14,5 +14,13 @@ const myList = new LinkedList();
 myList.insert(42);
 myList.insert(13);
 myList.insert(7);
+myList.insert(9);
 
-console.log(myList);
+let currentNode = myList.head;
+for (let i = 1; i <= myList.length; i += 1) {
+  console.log(currentNode.data);
+  currentNode = currentNode.next;
+}
+
+// console.log(myList);
+// console.log(JSON.stringify(myList, null, 2));
